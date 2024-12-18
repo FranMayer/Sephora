@@ -4,3 +4,248 @@
     padding: 0;
 }
 
+/* FUENTE 
+font-family: "Dosis", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;*/
+
+
+:root {
+    --background-color: #FFFFFF;
+    --primary-color: #FBFEFB;
+    --secondary-color: #EFE5DC;
+    --details-color: #F3D8C7;
+    --text-color: black;
+    --third-color: #F3D8C7;
+}
+
+html {
+    font-family: "Dosis", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* HEADER CSS */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header ul {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.header ul li {
+    padding: 1rem;
+    list-style: none;
+    list-style-type: none;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 25px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li:hover {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    transform: translateX(5px); 
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 10%;
+}
+
+/* SECTION ONE CSS*/
+
+.sectionone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url('/freelancer_inicio/img/tratamientos-corporales-e1486636161165-1200x760-1.webp');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: var(--text-color);
+    padding: 20px;
+}
+
+.title-so {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espacio entre el SVG y el texto */
+    font-size: 1.2rem;
+}
+
+.btn-contact {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: var(--third-color);
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-contact:hover {
+    background-color: var(--secondary-color);
+}
+
+/* MAIN CSS */
+
+.main {
+    display: flex;
+    flex-wrap: wrap;  
+    gap: 20px; 
+    padding: 20px;
+    justify-content: center; 
+    background-color: var(--background-color);
+}
+
+.main-section {
+    background-color: var(--third-color);
+    border: 1px solid var(--details-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+    text-align: center;
+    width: 280px; /* Ancho uniforme de las tarjetas */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.main-section:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.main-section h3 {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.main-section svg {
+    fill: var(--details-color);
+    stroke: var(--text-color);
+    margin-bottom: 15px;
+}
+
+.main-section p {
+    color: var(--text-color);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .main-section {
+        width: 100%; 
+    }
+}
+
+
+/* FORM CSS */
+
+.section-form {
+    background-color: var(--primary-color);
+    border: 1px solid var(--details-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 600px; /* Limita el ancho del formulario */
+    margin: 20px auto; /* Centra el formulario */
+    text-align: center;
+}
+
+.section-form h3 {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+
+.form-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaciado entre los elementos */
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.form-contact fieldset {
+    border: none; /* Sin bordes */
+    padding: 0;
+    margin: 0;
+}
+
+.form-contact legend {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.form-contact label {
+    text-align: left;
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block; /* Asegura que cada etiqueta esté sobre el input */
+}
+
+.form-contact input,
+.form-contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--details-color);
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    font-size: 1rem;
+    color: var(--text-color);
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-contact input:focus,
+.form-contact textarea:focus {
+    border-color: var(--third-color);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+.form-contact textarea {
+    height: 100px;
+    resize: none; /* Evita que se redimensione */
+}
+
+.form-contact button {
+    background-color: var(--details-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.form-contact button:hover {
+    background-color: var(--third-color);
+    transform: translateY(-2px); /* Movimiento ligero hacia arriba */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
