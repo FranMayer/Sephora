@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "milligram": "^1.4.1",
+    "motion": "^11.15.0"
+  }
+}
