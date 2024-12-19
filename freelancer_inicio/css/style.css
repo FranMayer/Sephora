@@ -8,7 +8,8 @@
 font-family: "Dosis", serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
-  font-style: normal;*/
+  font-style: normal;
+  */
 
 
 :root {
@@ -24,6 +25,7 @@ html {
     font-family: "Dosis", serif;
     font-optical-sizing: auto;
     font-style: normal;
+    scroll-behavior: smooth;
 }
 
 /* HEADER CSS */
@@ -31,6 +33,13 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.header h1 {
+    font-size: 2rem;
+    color: var(--text-color);
+    margin-left: 20px;
+
 }
 
 .header ul {
@@ -78,6 +87,11 @@ ul li:hover {
     height: 100vh;
     color: var(--text-color);
     padding: 20px;
+}
+
+.sectionone img {
+    opacity: 0.3;
+    filter: brightness(0.5);
 }
 
 .title-so {
@@ -248,4 +262,25 @@ ul li:hover {
     background-color: var(--third-color);
     transform: translateY(-2px); /* Movimiento ligero hacia arriba */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* FOOTER CSS*/
+
+.footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 1rem;
+    text-align: center;
+}
+
+footer a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
 }

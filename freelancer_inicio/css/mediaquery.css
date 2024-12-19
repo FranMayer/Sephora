@@ -1,0 +1,14 @@
+@media (min-width: 400px) {
+    .main-section {
+        width: 100%;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: var(--primary-color);
+        color: var(--text-color);
+    }
+}
