@@ -15,13 +15,19 @@
     }
 
     .sectionone {
-        background-image: url(/freelancer_inicio/img/esteticafoto.jpg);
+        background-image: url(/img/esteticafoto.jpg);
         display: flex;
         align-items: center;
     }
  
     .sectionone img {
         display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-section {
+        width: 100%; 
     }
 }
 

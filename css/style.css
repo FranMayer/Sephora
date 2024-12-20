@@ -87,7 +87,7 @@ ul li:hover {
     padding-left: 3rem;
     justify-content: center;
     text-align: center;
-    background-image: url('/freelancer_inicio/img/Ia\ Image.jpg');
+    background-image: url('/img/Ia\ Image.jpg');
     background-size: cover;
     background-position: center;
     max-width: 80%; 
@@ -180,11 +180,7 @@ ul li:hover {
     line-height: 1.5;
 }
 
-@media (max-width: 768px) {
-    .main-section {
-        width: 100%; 
-    }
-}
+
 
 
 /* FORM CSS */
