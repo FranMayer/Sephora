@@ -1,4 +1,6 @@
-@media (min-width: 400px) {
+@media (max-width: 576px) {
+
+
     .main-section {
         width: 100%;
     }
@@ -11,4 +13,15 @@
         background-color: var(--primary-color);
         color: var(--text-color);
     }
+
+    .sectionone {
+        background-image: url(/freelancer_inicio/img/esteticafoto.jpg);
+        display: flex;
+        align-items: center;
+    }
+ 
+    .sectionone img {
+        display: none;
+    }
 }
+

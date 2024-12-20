@@ -6,10 +6,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
-            
+
+
+           
     <link href="/freelancer_inicio/css/normalize.css" type="text/css" rel="stylesheet">
     <link rel="preload" href="/freelancer_inicio/css/style.css" as="style"> 
     <link href="/freelancer_inicio/css/style.css" type="text/css" rel="stylesheet">
+    <link href="/freelancer_inicio/css/mediaquery.css" type="text/css" rel="stylesheet">
 
     <title>Saphora- Main</title>
 
@@ -57,7 +60,7 @@
                 <path d="M11 20h9"></path>
                 <path d="M8 14l3 -2l1 -4c3 1 3 4 3 6"></path>
             </svg>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur minima recusandae voluptates repudiandae exercitationem aliquid.</p>
+            <p>Terapias manuales diseñadas para relajar, reducir tensiones y embellecer el cuerpo femenino.</p>
     </section>
 
     <section class="main-section">
@@ -71,7 +74,7 @@
                 <path d="M10.5 9.5l1.5 1.5"></path>
                 <path d="M3 21l3 -3"></path>
             </svg>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt in dolorem cupiditate ea reprehenderit cumque.</p>
+            <p>Espacio exclusivo para mujeres, con tratamientos que revitalizan cuerpo, mente y realzan la belleza.</p>
     </section>
         
     <section class="main-section">
@@ -82,33 +85,67 @@
                 <path d="M9 4l3.5 3.5"></path>
                 <path d="M4 9l3.5 3.5"></path>
             </svg>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae laborum iusto doloremque? Nisi, quaerat saepe?</p>
+            <p>Especialidad que embellece y cuida la piel femenina mediante tratamientos personalizados y efectivos.</p>
     </section>
 </main>
 
 <section class="section-form" id="form">
     <h3>Contacto</h3>
 
-    <form method="post" action="" class="form-contact"> 
+    <form method="post" action="" class="form-contact">
         <fieldset>
             <legend>Contáctanos llenando el formulario!</legend>
             
+            <!-- Nombre -->
             <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" maxlength="10" placeholder="Tu nombre"> 
+            <input 
+                type="text" 
+                id="nombre" 
+                name="nombre" 
+                maxlength="10" 
+                placeholder="Tu nombre" 
+                required 
+                pattern="[A-Za-z\s]+" 
+                title="El nombre solo puede contener letras y espacios.">
 
+            <!-- Teléfono -->
             <label for="telefono">Teléfono:</label>
-            <input type="tel" id="telefono" maxlength="9" placeholder="Tu celular">
+            <input 
+                type="tel" 
+                id="telefono" 
+                name="telefono" 
+                maxlength="9" 
+                placeholder="Tu celular" 
+                required 
+                pattern="[0-9]{9}" 
+                title="El teléfono debe contener exactamente 9 dígitos numéricos.">
 
+            <!-- Correo Electrónico -->
             <label for="correo">Correo Electrónico:</label>
-            <input type="email" id="correo" placeholder="Tu correo electrónico">
+            <input 
+                type="email" 
+                id="correo" 
+                name="correo" 
+                placeholder="Tu correo electrónico" 
+                required 
+                title="Introduce una dirección de correo válida.">
 
+            <!-- Mensaje -->
             <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" placeholder="Tu mensaje" maxlength="250"></textarea>
+            <textarea 
+                id="mensaje" 
+                name="mensaje" 
+                placeholder="Tu mensaje" 
+                maxlength="250" 
+                required 
+                title="El mensaje no puede estar vacío y debe tener máximo 250 caracteres."></textarea>
 
+            <!-- Botón de Enviar -->
             <button type="submit">Enviar</button>
         </fieldset>
     </form>
 </section>
+
 
 
 <footer>

@@ -29,7 +29,7 @@ html {
 }
 
 body {
-    background-image: linear-gradient(to top, var(--third-color) 0%, var(--primary-color)100%);
+    background: linear-gradient(to top, var(--third-color) 0%, var(--background-color) 100%);
 }
 
 /* HEADER CSS */
@@ -82,20 +82,23 @@ ul li:hover {
 .sectionone {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: self-start;
+    padding-left: 3rem;
     justify-content: center;
     text-align: center;
-    background-image: url('/freelancer_inicio/img/tratamientos-corporales-e1486636161165-1200x760-1.webp');
+    background-image: url('/freelancer_inicio/img/Ia\ Image.jpg');
     background-size: cover;
     background-position: center;
+    max-width: 80%; 
+    margin: 0 auto;
     height: 100vh;
     color: var(--text-color);
-    padding: 20px;
-}
+    border-radius: 0.5rem;
+}	
 
 .sectionone img {
     opacity: 0.3;
-    filter: brightness(0.5);
+    filter: brightness(0.3);
 }
 
 .title-so {
