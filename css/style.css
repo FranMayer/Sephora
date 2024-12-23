@@ -60,7 +60,6 @@ body {
     text-decoration: none;
     color: var(--text-color);
     font-size: 25px;
-    background-color: var(--primary-color);
     color: var(--text-color);
     transition: all 0.3s ease;
     cursor: pointer;
@@ -73,7 +72,7 @@ a {
 ul li:hover {
     background-color: var(--secondary-color);
     color: var(--text-color);
-    transform: translateX(5px); 
+    transform: translateX(2px); 
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); 
     border-radius: 10%;
 }
@@ -292,4 +291,37 @@ footer a {
     color: var(--text-color);
     text-decoration: none;
     font-weight: bold;
+}
+
+/* PAGINA SERVICIOS CSS*/
+
+.title__servicios {
+    text-align: center;
+}
+
+.main__servicios {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    gap: 40px;
+}
+
+.main__section {
+    background-color: var(--third-color);
+    border: 1px solid var(--details-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1 1 calc(33.333% - 40px); 
+    max-width: calc(33.333% - 40px);
+}
+
+.main__section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
