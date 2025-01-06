@@ -300,11 +300,10 @@ footer a {
 }
 
 .main__servicios {
-    display: flex;
-    justify-content: center; 
-    flex-wrap: wrap; 
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
     padding: 20px;
-    width: 100%;
+    width: auto;
     height: auto;
     gap: 40px;
 }
@@ -317,8 +316,6 @@ footer a {
     padding: 2rem;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    flex: 1 1 calc(33.333% - 40px); 
-    max-width: calc(33.333% - 40px);
 }
 
 .main__section:hover {
