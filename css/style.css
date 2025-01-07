@@ -322,3 +322,35 @@ footer a {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
+
+.contenedor__div {
+    margin: 0 auto;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    /* Centrado vertical */
+}
+
+.subtitulo__servicios {
+    margin: 0 auto;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.contenedor__div p {
+    text-align: center;
+    font-size: 1.3rem;
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.maps {
+    width: 90%; 
+    max-width: 800px; 
+    height: 60vh; 
+    border: 3px solid var(--details-color); 
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}

@@ -49,6 +49,7 @@
         background-image: url(/img/esteticafoto.jpg);
         display: flex;
         align-items: center;
+        padding: 0;
     }
 
     .main__servicios {
