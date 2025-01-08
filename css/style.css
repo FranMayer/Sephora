@@ -354,3 +354,105 @@ footer a {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 1rem;
 }
+
+/* TURNOS CSS */
+
+.main__turnero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.contenedortitulo__turnero {
+    width: 30rem;
+    max-width: 45rem;
+    margin: 0 auto;
+}
+
+
+/* Contenedor del formulario */
+.formulario__turnero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 5px; 
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    color: var(--secondary-color); 
+}
+
+/* Formulario */
+.form__turnero {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff; 
+    border: 1px solid var(--primary-color); 
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;
+    width: 100%;
+    max-width: 500px; 
+    margin: 0 auto;
+    text-align: left; 
+}
+
+.form__turnero label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form__turnero input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box; 
+}
+
+
+.form__turnero input::placeholder {
+    color: var(--text-color);
+    font-style: italic;
+}
+
+.form__turnero input:hover {
+    border-color: #999; 
+}
+
+.form__turnero input:focus {
+    outline: none; 
+    border-color: var(--third-color); 
+    box-shadow: 0 0 4px rgba(81, 75, 59, 0.5); 
+}
+
+
+datalist {
+    font-size: 1rem;
+}
+
+.form__turnero button {
+    background-color: var(--third-color); 
+    border: none; 
+    color: var(--text-color); 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    font-size: 1rem; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.form__turnero button:hover {
+    background-color: var(--third-color);
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+

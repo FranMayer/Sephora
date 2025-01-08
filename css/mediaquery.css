@@ -56,6 +56,14 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .form__turnero {
+        padding: 15px;
+    }
+
+    .formulario__turnero {
+        padding: 10px;
+    }
  
 }
 

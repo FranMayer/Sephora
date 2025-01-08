@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
             
-    <link href="/freelancer_inicio/css/normalize.css" type="text/css" rel="stylesheet">
-    <link rel="preload" href="/freelancer_inicio/css/style.css" as="style"> 
-    <link href="/freelancer_inicio/css/style.css" type="text/css" rel="stylesheet">
+    <link href="/css/normalize.css" type="text/css" rel="stylesheet">
+    <link rel="preload" href="/css/style.css" as="style"> 
+    <link href="/css/style.css" type="text/css" rel="stylesheet">
 
     <title>Saphora- Main</title>
 
@@ -23,9 +24,64 @@
 
         <nav class="nav-menu">
             <ul class="nav-list">
-                <a href="#"><li>Servicios</li></a>
-                <a href="#"><li>Turnos</li></a>
-                <a href="#"><li>Nosotros</li></a>
+                <a href="/index.html"><li>Inicio</li></a>
+                <a href="/pages/services.html"><li>Servicios</li></a>
+                <a href="/pages/aboutus.html"><li>Nosotros</li></a>
             </ul>
         </nav>
 </header>
+
+<main class="main__turnero">
+    <div class="contenedortitulo__turnero">   
+        <h1 class="title_turnero">Turnero</h1>
+        <p class="text__turnero">Si deseas obtener tu turno podes agendarlo aca abajo junto con la profesional de la estetica que deseas, recorda que si NO vas a asistir el dia asignado te pedimos por favor que nos avises al <a href=""">Whatsapp</a> O bien a través del mail saphora@estetica.com.es</p><br>
+        <p>Todos nuestros profesionales están plenamente capacitados para realizar todas las actividades, por lo que puedes elegir con total confianza a cualquiera de ellos.</p>
+    </div>
+
+    <div class="formulario__turnero">
+        <form class="form__turnero" action="#" method="POST">
+                <label>Nombre completo: </label>
+                <input type="text" name="nombre" id="nombre" required>
+
+                <label>Telefono: </label>
+                <input type="tel" name="telefono" id="telefono" required>
+
+                <label>Fecha: </label>
+                <input type="date" name="fecha" id="fecha" required>
+
+                <label>Hora: </label>
+                <input type="time" name="hora" id="hora" required>
+
+                <label for="servicio">Elige un servicio:</label>
+                    <input list="servicios" id="servicio" name="servicio" placeholder="Servicio...">
+                    <datalist id="servicios">
+                    <option value="Depilación">
+                    <option value="Manicura">
+                    <option value="Pedicura">
+                    <option value="Masajes">
+                    <option value="Tratamientos faciales">
+                    </datalist>
+
+                <label for="profesional">Elige un profesional:</label>
+                    <input list="profesionales" id="profesional" name="profesional" placeholder="Profesional...">
+                    <datalist id="profesionales">
+                    <option value="Andrea Rodriguez">
+                    <option value="Micaela Mérida">
+                    <option value="Susana Smith">
+                    <option value="Joe Doe">
+                    <option value="Jane Doe">
+                    </datalist>
+
+                    <button type="submit" class="btn__turnero">Asignar turno</button>
+        </form>
+    </div>
+</main>
+
+<footer>
+    <p>Estetica Saphora - 2024</p>
+    <p>Desarrollado por <a href="https://portfolio-fm.vercel.app" target="_blank" >Fran Mayer</a>
+</footer>
+
+
+</body>
+</html>
