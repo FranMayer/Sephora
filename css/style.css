@@ -456,3 +456,29 @@ datalist {
 }
 
 
+/*Acerca de nosotros*/
+
+.contenedor__aboutus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    min-height: 100vh;
+    padding: 5px; 
+    color: var(--text-color); 
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contenedor__aboutus img {
+    max-width: 100%;
+    padding: 1rem;
+    border-radius: 3%;
+}
+
+.contenedor__aboutus ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
